@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: <span id="total-followers">23,004</span></p>
+            <div class="dark-mode-toggle">
+                <label for="dark-mode">Dark Mode</label>
+                <input type="checkbox" id="dark-mode" onclick="toggleDarkMode()">
+            </div>
+        </header>
+        <section class="main-cards">
+            <div class="card" id="facebook">
+                <h2>Facebook</h2>
+                <p>@nathanf</p>
+                <p class="followers">1987</p>
+                <p class="today">12 Today</p>
+            </div>
+            <div class="card" id="twitter">
+                <h2>Twitter</h2>
+                <p>@nathanf</p>
+                <p class="followers">1044</p>
+                <p class="today">99 Today</p>
+            </div>
+            <div class="card" id="instagram">
+                <h2>Instagram</h2>
+                <p>@realnathanf</p>
+                <p class="followers">11k</p>
+                <p class="today">1099 Today</p>
+            </div>
+            <div class="card" id="youtube">
+                <h2>YouTube</h2>
+                <p>Nathan F.</p>
+                <p class="subscribers">8239</p>
+                <p class="today">-144 Today</p>
+            </div>
+        </section>
+        <h2>Overview - Today</h2>
+        <section class="overview-cards">
+            
+            <div class="overview-card" id="facebook-page-views">
+                <p>Page Views</p>
+                <p>87</p>
+                <p>3%</p>
+            </div>
+            <div class="overview-card" id="facebook-likes">
+                <p>Likes</p>
+                <p>52</p>
+                <p>-2%</p>
+            </div>
+            <div class="overview-card" id="instagram-likes">
+                <p>Likes</p>
+                <p>5462</p>
+                <p>2257%</p>
+            </div>
+            <div class="overview-card" id="instagram-profile-views">
+                <p>Profile Views</p>
+                <p>52k</p>
+                <p>1375%</p>
+            </div>
+            <div class="overview-card" id="twitter-retweets">
+                <p>Retweets</p>
+                <p>117</p>
+                <p>303%</p>
+            </div>
+            <div class="overview-card" id="twitter-likes">
+                <p>Likes</p>
+                <p>507</p>
+                <p>553%</p>
+            </div>
+            <div class="overview-card" id="youtube-likes">
+                <p>Likes</p>
+                <p>107</p>
+                <p>-19%</p>
+            </div>
+            <div class="overview-card" id="youtube-total-views">
+                <p>Total Views</p>
+                <p>1407</p>
+                <p>-12%</p>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

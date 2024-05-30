@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  background: purple;
+}
+
+.dark-mode-toggle label {
+  margin-right: 10px;
+}
+
+.main-cards, .overview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card, .overview-card {
+  background-color: #333;
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
+
+.card h2, .overview-card p {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 5px 0;
+}
+
+.card .followers, .card .subscribers, .card .today {
+  font-size: 24px;
+}
+
+.overview-card {
+  text-align: center;
+}
+
+.overview-card p {
+  font-size: 18px;
+}
+
+#dark-mode:checked ~ .dashboard {
+  background-color: #fff;
+  color: #000;
+}
