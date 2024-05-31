@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #1e1e1e;
+  background-color: hsl(230, 17%, 14%);
   color: #fff;
   margin: 0;
   padding: 0;
@@ -16,9 +16,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #444;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 
 header h1 {
@@ -42,7 +39,7 @@ header h1 {
 }
 
 .card, .overview-card {
-  background-color: #333;
+  background-color: hsl(228, 28%, 20%);
   border-radius: 5px;
   padding: 20px;
   flex: 1 1 calc(25% - 20px);
@@ -56,13 +53,20 @@ header h1 {
 .card p {
   margin: 5px 0;
 }
+.followers{
+  font-weight: 800;
+  font-size: 40px;
+}
 
-.card .followers, .card .subscribers, .card .today {
-  font-size: 24px;
+.today {
+  font-size: 12px;
+  color: hsl(163, 72%, 41%);
 }
 
 .overview-card {
   text-align: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .overview-card p {
@@ -72,4 +76,64 @@ header h1 {
 #dark-mode:checked ~ .dashboard {
   background-color: #fff;
   color: #000;
+}
+#facebook{
+  border-top: 3px solid hsl(208, 92%, 53%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#twitter{
+  border-top: 3px solid hsl(203, 89%, 53%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#instagram{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+#instagram::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+#youtube{
+  border-top: 3px solid hsl(348, 97%, 39%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+.stat{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+.pgview, .overviewstat{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.overviewstat div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

@@ -11,80 +11,188 @@
     <div class="dashboard">
         <header>
             <h1>Social Media Dashboard</h1>
-            <p>Total Followers: <span id="total-followers">23,004</span></p>
             <div class="dark-mode-toggle">
                 <label for="dark-mode">Dark Mode</label>
                 <input type="checkbox" id="dark-mode" onclick="toggleDarkMode()">
             </div>
         </header>
+        <p style="color: hsl(228, 34%, 66%);">Total Followers: <span id="total-followers">23,004</span></p>
         <section class="main-cards">
             <div class="card" id="facebook">
-                <h2>Facebook</h2>
-                <p>@nathanf</p>
+                <div class="user">
+                    <img src="/images/icon-facebook.svg" alt="">
+                    <p style="color: hsl(228, 34%, 66%);">@nathanf</p>
+                </div>
                 <p class="followers">1987</p>
-                <p class="today">12 Today</p>
+                <p style="color: hsl(228, 34%, 66%);">FOLLOWER</p>
+                <div class="stat">
+                    <img src="/images/icon-up.svg" alt="" >
+                    <p class="today">12 Today</p>
+                </div>
+                
             </div>
             <div class="card" id="twitter">
-                <h2>Twitter</h2>
-                <p>@nathanf</p>
+                <div class="user">
+                    <img src="/images/icon-twitter.svg" alt="">
+                    <p style="color: hsl(228, 34%, 66%);">@nathanf</p>
+                </div>
                 <p class="followers">1044</p>
-                <p class="today">99 Today</p>
+                <p style="color: hsl(228, 34%, 66%);">FOLLOWER</p>
+                <div class="stat">
+                    <img src="/images/icon-up.svg" alt="" >
+                    <p class="today">99 Today</p>
+                </div>
+               
+                
             </div>
             <div class="card" id="instagram">
-                <h2>Instagram</h2>
-                <p>@realnathanf</p>
+                <div class="user">
+                    <img src="/images/icon-instagram.svg" alt="">
+                    <p style="margin-left: 10px; color: hsl(228, 34%, 66%);">@realnathanf</p>
+                </div>
                 <p class="followers">11k</p>
-                <p class="today">1099 Today</p>
+                <p style="font-family: Inter, 'https://fonts.google.com/specimen/Inter'; color: hsl(228, 34%, 66%);">FOLLOWER</p>
+                <div class="stat">
+                    <img src="/images/icon-up.svg" alt="" >
+                    <p class="today">1099 Today</p>
+                </div>
             </div>
             <div class="card" id="youtube">
-                <h2>YouTube</h2>
-                <p>Nathan F.</p>
-                <p class="subscribers">8239</p>
-                <p class="today">-144 Today</p>
+                <div class="user">
+                    <img src="/images/icon-youtube.svg" alt="">
+                    <p style="color: hsl(228, 34%, 66%);">Nathan F.</p>
+                </div>
+                <p class="followers">8239</p>
+                <p style="color: hsl(228, 34%, 66%);">FOLLOWER</p>
+                <div class="stat">
+                    <img src="/images/icon-down.svg" alt="" >
+                    <p class="today">-144 Today</p>
+                </div>
             </div>
         </section>
         <h2>Overview - Today</h2>
         <section class="overview-cards">
             
             <div class="overview-card" id="facebook-page-views">
-                <p>Page Views</p>
-                <p>87</p>
-                <p>3%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Page Views</p>
+                    <img src="/images/icon-facebook.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">87</p>
+                    <div>
+                        <img src="/images/icon-up.svg" alt="">
+                        <p style="color: hsl(163, 72%, 41%); font-size: 15px;">3%</p>
+                    </div>
+                    
+                </div>
             </div>
             <div class="overview-card" id="facebook-likes">
-                <p>Likes</p>
-                <p>52</p>
-                <p>-2%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Likes</p>
+                    <img src="/images/icon-facebook.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">52</p>
+                    <div>
+                        <img src="/images/icon-down.svg" alt="">
+                        <p style="color: hsl(356, 69%, 56%); font-size: 15px;">2%</p>
+                    </div>
+                    
+                </div>
             </div>
             <div class="overview-card" id="instagram-likes">
-                <p>Likes</p>
-                <p>5462</p>
-                <p>2257%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Likes</p>
+                    <img src="/images/icon-instagram.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">5462</p>
+                    <div>
+                        <img src="/images/icon-up.svg" alt="">
+                        <p style="color: hsl(163, 72%, 41%); font-size: 15px;">2257%</p>
+
+                    </div>
+                    
+                </div>
+                
+                
             </div>
             <div class="overview-card" id="instagram-profile-views">
-                <p>Profile Views</p>
-                <p>52k</p>
-                <p>1375%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Profile Views</p>
+                    <img src="/images/icon-instagram.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">52k</p>
+                    <div>
+                        <img src="/images/icon-up.svg" alt="">
+                        <p style="color: hsl(163, 72%, 41%); font-size: 15px;">1375%</p>
+                    </div>
+                    
+                </div>
             </div>
             <div class="overview-card" id="twitter-retweets">
-                <p>Retweets</p>
-                <p>117</p>
-                <p>303%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Retweets</p>
+                    <img src="/images/icon-twitter.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">117</p>
+                    <div>
+                        <img src="/images/icon-up.svg" alt="">
+                        <p style="color: hsl(163, 72%, 41%); font-size: 15px;">303%</p>
+                    </div>
+                   
+                </div>
+                
+                
             </div>
             <div class="overview-card" id="twitter-likes">
-                <p>Likes</p>
-                <p>507</p>
-                <p>553%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Likes</p>
+                    <img src="/images/icon-twitter.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">507</p>
+                    <div>
+                        <img src="/images/icon-up.svg" alt="">
+                        <p style="color: hsl(163, 72%, 41%); font-size: 15px;">553%</p>
+                    </div>
+                   
+                </div>
+
+                
             </div>
             <div class="overview-card" id="youtube-likes">
-                <p>Likes</p>
-                <p>107</p>
-                <p>-19%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Likes</p>
+                    <img src="/images/icon-youtube.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">107</p>
+                    <div>
+                        <img src="/images/icon-down.svg" alt="">
+                        <p style="color: hsl(356, 69%, 56%); font-size: 15px;">19%</p>
+                    </div>
+                    
+                </div>
+                
+                
             </div>
             <div class="overview-card" id="youtube-total-views">
-                <p>Total Views</p>
-                <p>1407</p>
-                <p>-12%</p>
+                <div class="pgview">
+                    <p style="color: hsl(228, 34%, 66%);">Total Views</p>
+                    <img src="/images/icon-youtube.svg" alt="">
+                </div>
+                <div class="overviewstat">
+                    <p style="font-weight: 700; font-size: 25px;">1407</p>
+                    <div>
+                        <img src="/images/icon-down.svg" alt="">
+                        <p style="color: hsl(356, 69%, 56%); font-size: 15px;">12%</p>
+                    </div>
+                    
+                </div>                
             </div>
         </section>
     </div>
